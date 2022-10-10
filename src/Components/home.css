@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+html{
+    font-size: 62.5%;
+}
+.main-div{
+    min-height: 100vh;
+    background: #060822;
+    display: flex;
+    justify-content: center;
+}
+.child-div{
+    text-align: center;
+    margin-top: 12rem;
+}
+.child-div figure figcaption{
+    color: #fff;
+    font-size: 2.2rem;
+    padding-top: 2rem;
+    text-transform: capitalize  ;
+}
+input{
+    min-width: 40rem;
+    height: 3.4rem;
+    padding: 2rem 1.2rem;
+    font-size: 1.8rem;
+    line-height: 1.42;
+    margin-top: 2rem;
+    color: rgb(58, 57, 57);
+    background-color: #fff;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.4rem;
+    box-shadow: inset  0 0.1rem 0.1rem rgb(0, 0, 0/8%);
+}
+
+input, input:focus,
+input:active,
+input:active:focus{
+   border: none;
+   padding: 2.3rem 1.5rem;
+   outline: none;
+}
+input {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  input:focus {
+    -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+  }
+  .fa{
+    margin-left: -2.5rem;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 10;
+    background-color: #fff;
+    color: #666;
+    transition: 0.15s linear;
+    font-size: 2rem;
+}
+.fa:hover{
+    color: rgb(47, 214, 122);
+}
