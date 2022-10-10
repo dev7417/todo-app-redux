@@ -9,7 +9,7 @@ const todoData = (state= initialState, action) =>{
         const {id, data} = action.payLoad;
         return{
             ...state,
-            data : [
+            Lists: [
                 ...state.Lists,
                 {
                     id:id,
