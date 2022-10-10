@@ -2,16 +2,22 @@ export const addTodod = (data) =>{
     return {
         type: "ADD_TODO",
         payLoad:{
-            id: new Date().getTime(),
-            data:data,
+           
+                id: new Date().getTime(),
+                data:data,
+         
+            
         }
     }
 }
 
-export const deleteTodo = () =>{
+export const deleteTodo = (id) =>{
+    console.log(id)
     return {
-        type: "DELETE_TODO"
+        type: "DELETE_TODO",
+        id    
     }
+  
 }
 
 export const clearTodo = () =>{

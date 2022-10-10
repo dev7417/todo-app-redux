@@ -95,3 +95,16 @@ input {
     font-size: 1.6rem;
     color: #000;
 }
+
+.btn{
+    border: none;
+    padding: 2rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s linear all;
+}
+
+.btn:hover{
+    background: rgb(41, 155, 163);
+    color: #fff;
+}

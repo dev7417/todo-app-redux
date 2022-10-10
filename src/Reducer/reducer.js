@@ -17,7 +17,20 @@ const todoData = (state= initialState, action) =>{
             }
         ]
         }
+         case "DELETE_TODO":
+     const newList = state.Lists.filter((item)=> item.id!== action.id)
+     console.log(newList)
+        return {
+            ...state,
+            Lists: newList
+        }
+        case "CLEAR_TODO":
+            return{
+                ...state,
+                Lists:[]
+            }
         default: return state
     }
+  
 }
 export default todoData;
